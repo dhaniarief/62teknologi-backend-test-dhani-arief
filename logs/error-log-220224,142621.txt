@@ -1,0 +1,13 @@
+Date: Thu Feb 22 2024 14:26:21 GMT+0700 (Western Indonesia Time)
+Error Message: Users is not defined
+ReferenceError: Users is not defined
+    at getBusinesses (file:///C:/Users/dhani.arief/Documents/New%20folder/enamdua/backend/controllers/Business.js:9:22)
+    at Layer.handle [as handle_request] (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\dhani.arief\Documents\New folder\enamdua\backend\node_modules\express\lib\router\index.js:47:12)

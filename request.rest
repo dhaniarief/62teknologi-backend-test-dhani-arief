@@ -1,0 +1,110 @@
+###
+//Get All Business
+GET http://localhost:5000/business
+
+###
+//Create Business
+POST http://localhost:5000/business
+Content-Type: application/json
+
+{
+  "alias": "nama-bisnis-12",
+  "name": "Tes",
+  "image_url": "https://example1.com/image.jpg",
+  "url": "https://example.com",
+  "is_closed": false,
+  "review_count": 400,
+  "rating": 4.5,
+  "phone": "123-456-7890",
+  "display_phone": "(123) 456-7890",
+  "price": "$$",
+  "transactions": ["delivery", "pickup"],
+  "category": [
+    {
+      "alias": "kategori-113",
+      "title": "Kategori 11"
+    },
+    {
+      "alias": "kategori-21",
+      "title": "Kategori 21"
+    }
+  ],
+  "coordinate": [
+    {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  ],
+  "location": [
+    {
+      "address1": "123 Main St1",
+      "city": "Jakarta",
+      "zip_code": "123451",
+      "country": "United States1",
+      "state": "CA1",
+      "display_address": ["123 Main St", "Cityville, CA 12345"]
+    }
+  ]
+}
+
+###
+//Get Business By Id
+GET http://localhost:5000/business/df8d3e1f-d24a-4b70-8606-5557d33f529c
+
+###
+//Update Business
+PATCH http://localhost:5000/business/df8d3e1f-d24a-4b70-8606-5557d33f529c
+Content-Type: application/json
+
+{
+  "alias": "nama-bisnis-eit",
+  "name": "Nama Bisnis edit",
+  "image_url": "https://example1.com/image.jpg",
+  "url": "https://example.com",
+  "is_closed": false,
+  "review_count": 100,
+  "rating": 4.5,
+  "phone": "123-456-7890",
+  "display_phone": "(123) 456-7890",
+  "price": "$$",
+  "transactions": ["delivery", "pickup"],
+  "category": [
+    {
+      "alias": "kategori-11edit",
+      "title": "Kategori 11"
+    }
+  ],
+  "coordinate": [
+    {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  ],
+  "location": [
+    {
+      "address1": "123 Main St1",
+      "city": "Cityville1",
+      "zip_code": "123451edit",
+      "country": "United States1",
+      "state": "CA1",
+      "display_address": ["123 Main St", "Cityville, CA 12345"]
+    },
+    {
+      "address1": "123 Main St1Edit",
+      "address2": "123 Main St1Edit",
+      "city": "Cityville1",
+      "zip_code": "123451edit",
+      "country": "United States1",
+      "state": "CA1",
+      "display_address": ["123 Main St", "Cityville, CA 12345"]
+    }
+  ]
+}
+
+###
+//Delete Business By Id
+DELETE http://localhost:5000/business/df8d3e1f-d24a-4b70-8606-5557d33f529c
+
+###
+//Search Business
+GET http://localhost:5000/business/search
